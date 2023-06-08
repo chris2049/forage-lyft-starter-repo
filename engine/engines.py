@@ -1,8 +1,7 @@
-from parts.engine import Engine
+from engine.engine import Engine
 
 class CapuletEngine(Engine):
-    def __init__(self, last_service_date, current_mileage, last_service_mileage):
-        self.last_service_date = last_service_date
+    def __init__(self, current_mileage, last_service_mileage):
         self.current_mileage = current_mileage
         self.last_service_mileage = last_service_mileage
 
@@ -11,8 +10,7 @@ class CapuletEngine(Engine):
     
 
 class SternmanEngine(Engine):
-    def __init__(self, last_service_date, warning_light_is_on):
-        self.last_service_date = last_service_date
+    def __init__(self, warning_light_is_on):
         self.warning_light_is_on = warning_light_is_on
 
     def needs_service(self):
@@ -23,8 +21,7 @@ class SternmanEngine(Engine):
 
 
 class WilloughbyEngine(Engine):
-    def __init__(self, last_service_date, current_mileage, last_service_mileage):
-        self.last_service_date = last_service_date
+    def __init__(self, current_mileage, last_service_mileage):
         self.current_mileage = current_mileage
         self.last_service_mileage = last_service_mileage
 
