@@ -30,6 +30,3 @@ class TestWilloughbyEngine(unittest.TestCase):
         self.assertFalse(engine.needs_service())
 
 
-
-if __name__ == '__main__':
-    unittest.main()
